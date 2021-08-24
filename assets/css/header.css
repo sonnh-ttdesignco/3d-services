@@ -1,0 +1,45 @@
+.button {
+	border: none;
+	border-radius: 3px;
+	padding: 0 20px;
+	text-align: center;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0 30px;
+    margin-left: -75px;
+	min-width: 25px;
+	height: 35px;
+	font-size: 16px;
+	line-height: 44px;
+	transition: 250ms linear;
+	background: #1273eb;
+	color: #fff;
+    float: right !important;
+}
+
+.button--icon i {
+	float: inherit !important;
+	margin: 0 auto
+}
+
+.button:hover {
+	background: #0161cd;
+	color: #fff
+}
+
+.button.active {
+	background: #0353a7;
+	color: #fff
+}
+
+.button::after {
+	display: table;
+	clear: both;
+	content: ''
+}
+
+.button.disabled {
+	opacity: 0.4;
+	pointer-events: none
+}
