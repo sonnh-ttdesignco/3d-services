@@ -36,8 +36,7 @@
                                 <div class="user-menu">
                                     <div class="user-menu-item">Edit profile</div>
                                     <div class="user-menu-item">Setting</div>
-                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;"
-                                        href="/src/auth/login.html" onclick="logout()">Log out</a>
+                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;" href="/src/auth/login.html" onclick="logout()">Log out</a>
                                 </div>
                             </div>
                         </div>
@@ -54,13 +53,12 @@
         </div>
     </div>
     <!--Coded with love by Mutiullah Samim-->
-    <div class="container h-100">
-        <div class="d-flex justify-content-center h-100">
+    <div id="contentform">
+        <!-- <div class="d-flex justify-content-center h-100">
+
+
             <div class="user_card">
                 <div class="d-flex justify-content-center">
-                    <!-- <div class="brand_logo_container">
-                        <img src="/assets/img/logo2.png" class="brand_logo" alt="Logo">
-                    </div> -->
                 </div>
                 <div class="d-flex justify-content-center form_container">
                     <form id="login-form">
@@ -99,9 +97,65 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="content__form">
+                    <div class="form__title">
+                        <p>Log in</p>
+                    </div>
+                    <div class="form__input" id="login-form">
+                        <p class="form__lable">Email</p>
+                        <input class="form__textbox" type="email" name="username" placeholder="...@gmail.com"></input>
+                        <div class="form__password">
+                            <p class="form__lable">Password</p>
+                            <p class="form__lable" style="color: gray;">Lost password?</p>
+                        </div>
+                        <div class="form_passtext">
+                            <input class="form__textbox" type="password" name="password" placeholder="*****">
+                            </input>
+                            <i id="icon__eyes" class="fas fa-eye-slash"></i>
+                        </div>
+                        <div class="button__login login_btn">
+                            <p>LOG IN WITH EMAIL</p>
+                        </div>
+                        <div class="form__others">
+                            <p class="other__text-bold">OR SIGN IN WITH</p>
+                            <div class="others__social">
+                                <div class="others__item">
+                                    <i style="color: rgb(24, 119, 242);" class="fab fa-facebook"></i>
+                                    <p>Facebook</p>
+                                </div>
+                                <div class="others__item">
+                                    <i style="color: rgb(219,68,55);" class="fab fa-google"></i>
+                                    <p>Google</p>
+                                </div>
+                                <div class="others__item">
+                                    <i style="color: #1d9bf0;" class="fab fa-twitter"></i>
+                                    <p>Twitter</p>
+                                </div>
+                                <div class="others__item">
+                                    <i style="color: black;" class="fab fa-apple"></i>
+                                    <p>Apple</p>
+                                </div>
+
+                            </div>
+                            <p class="text__account">
+                                Create an account?
+                            </p>
+                            <div class="others__additional">
+                                <a>Privacy Policy</a>
+                                <span> • </span>
+                                <a>Help</a>
+                                <span> • </span>
+                                <a>Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 
     <!-- <div class="page-footer">
         <div class="footer-social-icon">
