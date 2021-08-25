@@ -1,5 +1,4 @@
 body {
-
     font-family: ArtifaktElement-Regular, sans-serif;
     font-size: 1rem;
     color: #053775;
@@ -191,7 +190,6 @@ body {
 
 .btn:hover {
     /* background-image: linear-gradient(90deg, #4d72a0 0%, #4d72a0 100%); */
-
     background-color: #085283;
 }
 

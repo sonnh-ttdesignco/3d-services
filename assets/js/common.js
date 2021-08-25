@@ -56,7 +56,7 @@ function userMenuBtnBehavior() {
     $btn = $(`.user-menu-btn`);
     $menu = $(`.user-menu-wrap`);
 
-    $userWrap.click(function (e) {
+    $userWrap.click(function(e) {
         e.preventDefault();
         if ($btn.hasClass("fa-caret-up")) {
             //close
@@ -74,9 +74,27 @@ function userMenuBtnBehavior() {
             }
         }
     });
+
 }
 
-$(function () {
+var mouse_is_inside = false;
+
+$(document).ready(function() {
+    $("#userInfo").hover(function() {
+        mouse_is_inside = true;
+    }, function() {
+        mouse_is_inside = false;
+        $(`.user-menu-btn`).removeClass("fa-caret-up");
+        $(`.user-menu-btn`).addClass("fa-caret-down");
+        if (!$(`.user-menu-wrap`).hasClass("hidden")) {
+            $(`.user-menu-wrap`).addClass("hidden");
+        }
+    });
+
+});
+
+
+$(function() {
     if (getAuth().state == 1) {
         if ($(`.nav-bar .user-wrap`).hasClass("hidden")) {
             $(`.nav-bar .user-wrap`).removeClass("hidden");
@@ -103,6 +121,3 @@ $(function () {
 
     userMenuBtnBehavior();
 })
-
-
-
