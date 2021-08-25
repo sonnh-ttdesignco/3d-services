@@ -69,7 +69,7 @@ footer>div {
 }
 
 .text-hover-white:hover {
-	color: #dc3545
+	color: #dc3545 !important;
 }
 
 .footer-top .middle-links {
