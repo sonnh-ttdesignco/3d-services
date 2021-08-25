@@ -73,7 +73,18 @@ function userMenuBtnBehavior() {
                 $menu.removeClass("hidden");
             }
         }
+        setTimeout(() => {
+            $(`.user-wrap .user-menu a`).each(function () {
+                let $this = $(this);
+                $this.click(() => {
+                    console.log($this.attr("href"));
+                    window.location = $this.attr("href");
+                })
+            })
+        }, 100)
+
     });
+
 }
 
 $(function () {
@@ -103,6 +114,3 @@ $(function () {
 
     userMenuBtnBehavior();
 })
-
-
-
