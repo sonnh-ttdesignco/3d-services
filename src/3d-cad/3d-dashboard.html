@@ -30,8 +30,66 @@
 
             <div class="nav-bar-menu-wrap">
                 <input class="form-control" type="text" placeholder="3Dモデル検索">
-                <div class="shoppint-cart">
+                <div class="shoppint-cart" id="cart-icon">
                     <i class="fas fa-shopping-cart fa-lg"></i>
+                    <span class="cart-icon-count">2</span>
+                    <div class="cart-wrap hide" id="cart">
+                        <div class="cart-header">
+                            <p class="header-title">
+                                Shopping Cart
+                            </p>
+                            <span class="header-subtitle">2</span>
+                        </div>
+                        <div class="cart-list">
+                            <div class="cart-item">
+                                <div class="cart-thumpnail">
+                                    <a href="#">
+                                        <img class="img-full-width" src="/src/3d-cad/img/content/1.png">
+                                    </a>
+                                </div>
+                                <div class="cart-content">
+                                    <p>
+                                        <a class="content-title" href="#">ATC-KA80t Model</a>
+                                    </p>
+                                    <p class="content-subtitle">$14.99</p>
+                                </div>
+                                <div class="cart-action">
+                                    <button class="cart-action-btn">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="cart-thumpnail">
+                                    <a href="#">
+                                        <img class="img-full-width" src="/src/3d-cad/img/content/5.png">
+                                    </a>
+                                </div>
+                                <div class="cart-content">
+                                    <p>
+                                        <a class="content-title" href="#">ATC-TA200t Model</a>
+                                    </p>
+                                    <p class="content-subtitle">$25.99</p>
+                                </div>
+                                <div class="cart-action">
+                                    <button class="cart-action-btn">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-footer">
+                            <div class="footer-total">
+                                <p class="total-title">Total</p>
+                                <p class="total-price">$40.98</p>
+                            </div>
+                            <a class="footer-action" href="/src/3d-cad//3d-checkout.html">
+                                <button class="button action-btn">
+                                    <span class="btn-text">Go to checkout</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="nav-bar-menu">
                     <div class="menu-item user-wrap hidden">
@@ -46,7 +104,8 @@
                                 <div class="user-menu">
                                     <div class="user-menu-item">Edit profile</div>
                                     <div class="user-menu-item">Setting</div>
-                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;" href="/src/auth/login.html" onclick="logout()">Log out</a>
+                                    <a class="user-menu-item" style="text-decoration: none; color: #1858A8;"
+                                        href="/src/auth/login.html" onclick="logout()">Log out</a>
                                 </div>
                             </div>
                         </div>
@@ -489,7 +548,8 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade " id="model-crane" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade " id="model-crane" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
