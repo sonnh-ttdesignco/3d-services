@@ -53,6 +53,7 @@ p {
 
 .shoppint-cart {
     margin: 0 15px;
+    display: flex;
 }
 
 .shoppint-cart:hover {
@@ -60,7 +61,7 @@ p {
 }
 
 .menu-item {
-    align-items: center !important;
+    /* align-items: center !important; */
 }
 
 .nav-bar-menu {
@@ -581,4 +582,23 @@ p {
     font-weight: 600;
     color: white;
     text-align: center;
+}
+
+/* SonNH 20210824 */
+.cart-icon-count {
+    position: relative;
+    left: -10px;
+    top: 0px;
+    padding: 1px 2px;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 9px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #df1660;
+    border-radius: 2px;
+    transform: translate(1px, -7px);
 }

@@ -67,3 +67,231 @@ html {
     display: flex;
     justify-content: center;
 }
+
+/* cart modal */
+.cart-wrap {
+    position: absolute;
+    top: 40px;
+    width: 400px;
+    height: 400px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 14%);
+    transform: translate(22px, 15px);
+    z-index: 25;
+    cursor: default;
+    height: auto;
+    max-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-wrap.hide {
+    display: none;
+}
+
+.cart-wrap::before,
+.cart-wrap::after {
+    position: absolute;
+    right: 23px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    content: " ";
+    border: solid transparent;
+}
+
+.cart-wrap::before {
+    margin-left: -11px;
+    border-width: 11px;
+    border-color: hsla(0, 0%, 74.1%, 0) hsla(0, 0%, 74.1%, 0) #eee;
+    transform: translateX(1px);
+}
+
+.cart-wrap:after {
+    margin-left: -10px;
+    border-width: 10px;
+    border-color: rgba(136, 183, 213, 0) rgba(136, 183, 213, 0) #fff;
+}
+
+.cart-wrap .cart-header {
+    padding: 20px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.cart-header .header-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.cart-header .header-subtitle {
+    margin-left: 10px;
+    padding: 0 3px;
+    background-color: #df1660;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cart-wrap .cart-list {
+    flex: 1;
+    overflow: auto;
+}
+
+.cart-list>:not(:first-child) {
+    border-top: 1px solid #e7e7e7;
+}
+
+.cart-list .cart-item {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.cart-item>:not(:first-child) {
+    margin-left: 10px;
+}
+
+.cart-item .cart-thumpnail {
+    width: 70px;
+    height: 40px;
+}
+
+.cart-wrap .cart-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-content .content-title {
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 4px;
+    text-decoration: none;
+}
+
+.content-title:hover {
+    color: #1CAAD9;
+}
+
+.cart-content .content-subtitle {
+    color: #555;
+    font-size: 14px;
+}
+
+.cart-content .cart-action {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.cart-action .cart-action-btn {
+    padding: 0;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: .75;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+.cart-action-btn:hover {
+    opacity: 1;
+}
+
+.cart-wrap .cart-footer {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.cart-footer .footer-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-total .total-title {
+    margin: 0;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-total .total-price {
+    margin: 0;
+    color: #df1660;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart-footer .footer-action {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.footer-action .action-btn {
+    width: 100%;
+    position: relative;
+    color: #fff;
+    background-color: #df1660;
+    transition: background-color .15s ease;
+    border: 0;
+    border-color: "";
+    border-style: solid;
+    border-radius: 4px;
+    min-height: 45px;
+    font-size: 12px;
+    padding: 0 16px;
+}
+
+
+.action-btn:hover {
+    background-color: #ad114b;
+}
+
+.action-btn .btn-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: left;
+    line-height: 1.25;
+}
+
+.button,
+.button-form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    transition: background .2s;
+    line-height: normal;
+    flex-shrink: 0;
+}
