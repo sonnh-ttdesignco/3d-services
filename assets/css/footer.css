@@ -30,7 +30,7 @@ footer>div {
 }
 
 .footer-top .awesome-logo {
-	margin: 20px 0px 0 0px;
+	margin: 20px 0px 10px 0px;
 	color: white;
 	font-family: calibri;
 	font-size: 25px;
@@ -51,7 +51,7 @@ footer>div {
 }
 
 .footer-top p {
-	margin-top: 3px !important;
+	margin-top: 4px !important;
 	margin-left: 0px;
 	display: flex;
 	flex-direction: row;
@@ -124,11 +124,11 @@ footer>div {
 }
 
 .footer-bottom {
-	margin-top: 30px;
+	margin-top: 25px;
 	font-size: 12px;
 	color: light_grey;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	text-align: center;
 	border-top: 1px solid rgb(177, 177, 177);
 }

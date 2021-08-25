@@ -87,7 +87,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: linear-gradient(90deg, #4d72a0 0%, #37b3ec 100%);
+    background-image: linear-gradient(90deg, #0537757a 0%, #053775 100%);
     color: white;
     border-radius: 17px;
 }
@@ -162,8 +162,8 @@ body {
 
 .menu-item .menu-btn {
     padding: 0.15rem 1rem;
-    background-color: #0e79c1;
-    border-color: #0e79c1;
+    background-color: #053775;
+    border-color: #053775;
     color: white;
 }
 
