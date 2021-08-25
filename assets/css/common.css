@@ -155,6 +155,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     font-weight: 500;
+    user-select: none;
 }
 
 .menu-item.hidden {
