@@ -94,16 +94,17 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 60px 0;
 	}
 
 	#contentform {
-		padding-top: 10vh;
+		padding-top: 60px;
 		display: flex;
 		justify-content: center;
 		background: rgba(0, 0, 0, .7);
 
 		background-image: url("./../3d-cad/img/back5.jpg");
-		height: 800px;
+		/* height: 800px; */
 	}
 
 	.content__form {
