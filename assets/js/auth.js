@@ -23,7 +23,7 @@ var myAuth = {
     type: ""
 }
 
-if (typeof (Storage) !== "undefined") {
+if (typeof(Storage) !== "undefined") {
     // Code for localStorage/sessionStorage.
     if (!window.sessionStorage.getItem("auth")) {
         window.sessionStorage.setItem("auth", JSON.stringify(myAuth))
@@ -66,7 +66,7 @@ function login(loginInfo) {
                 window.location.href = "/src/databook/databook.html";
                 break;
             default:
-                window.location.href = "/src/home/home.html";
+                window.location.href = "/index.html";
                 break;
         }
         result = {

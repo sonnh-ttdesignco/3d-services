@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/src/3d-cad/3d-dashboad.css">
+    <link rel="stylesheet" href="/src/3d-cad/3d-cad.css">
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="/index.css">
     <title>3D-CADライブラリー</title>
@@ -21,163 +22,113 @@
     <div id="headerID"> </div>
     <!-- End Header -->
 
-    <div class="cad-page">
-        <div class="header-banner">
-            <p class="title-page-3d ">3D-CADライブラリー</p>
-            <p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officia placeat, nam accusamus sunt maxime nostrum, esse et dicta quod
-                numquam non similique nemo dolorum beatae adipisci, consequatur
-                exercitationem odio aliquam</p>
-        </div>
-        <div class="full-content">
-            <div class="full-content-right">
-                <div class="related-tag gray">
-                    <h5 class="sidebar-title">フィルター検索</h5>
-                    <div class="filter-list">
-                        <div class="filer-type">
-                            <p>ブランド名</p>
-                            <i style="color: #1858A8;" class="fas fa-chevron-right fa-sm"></i>
-                        </div>
-                        <div class="filer-type">
-                            <p>カテゴリ</p>
-                            <i style="color: #1858A8;" class="fas fa-chevron-right fa-sm"></i>
-                        </div>
-                        <div class="filer-type">
-                            <p>ファイルタイプ</p>
-                            <i style="color: #1858A8;" class="fas fa-chevron-right fa-sm"></i>
-                        </div>
+
+    <section class="info-section" style="background-color: #f7f9fa;">
+        <div class="container-fixed">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-lg-5 col-xl-4 offset-lg-1 offset-xl-2">
+                    <div class="header__content">
+                        <h4 class="heading-16 header__tag-line">The world's preferred source for 3D content</h4>
+                        <h1 class="heading-40 header__title"><strong>Search</strong> thousands of 3D models</h1>
+                        <p>Find the exact right 3D content for your needs, including AR/VR, gaming, advertising, entertainment and 3D printing</p>
                     </div>
                 </div>
-            </div>
-            <div class="full-content-left">
-                <div class="header-left-content">
-                    <p class="tile-cate">3D‐CADデータの一覧</p>
-                    <!-- <div class="view-all">
-                        <p>View all</p>
-                        <i style="color: #1c88bb;" class="fas fa-chevron-right fa-sm"></i>
+                <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                    <!-- <div class="header__viewer">
+                        <div id="view-model-3d">
+                            <p id="loading-model">1111111</p>
+                        </div>
                     </div> -->
-
+                    <!-- <div class="category-model col-12 col-sm-4 info-section__image-list"> -->
+                    <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/5.png">
+                    <!-- <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24"></a> -->
+                    <!-- </div> -->
                 </div>
-                <div class="content-left-models">
-                    <div class="category-model">
-                        <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/1.png">
-                        <a href="/src/3d-cad/3d-dashboard.html" class="text-hover">海洋重機関連</a>
-                    </div>
-                    <div class="category-model">
-                        <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/2.png">
-                        <a href="/src/3d-cad/3d-dashboard.html" class="text-hover">交通規制関連</a>
-                    </div>
-                    <div class="category-model">
-                        <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/3.png">
-                        <a href="/src/3d-cad/3d-dashboard.html" class="text-hover">車両関連</a>
-                    </div>
-                    <div class="category-model">
-                        <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/4.png">
-                        <a href="/src/3d-cad/3d-dashboard.html" class="text-hover">足場機材</a>
-                    </div>
-                    <div class="category-model">
-                        <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/5.png">
-                        <a href="/src/3d-cad/3d-dashboard.html" class="text-hover">クレーン</a>
-                    </div>
 
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade " id="model-crane" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">オールテレーンクレーン 80T</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="view-model-3d">
-                        <p id="loading-model">3Dモデルが読み込まれています...</p>
-                    </div>
-                    <div class="payment-method">
-                        <div class="payment-border">
-                            <div class="money-cart">
-                                <!-- <p class="money">$ FREE</p>
-                                <div class="infor-detail">
-                                    <i class="fas fa-lock fa-sm"></i>
-                                    <p>Secure payment</p>
-                                </div>
-                                <div class="infor-detail">
-                                    <i class="fas fa-envelope fa-sm"></i>
-                                    <p>Support from sellers</p>
-                                </div>
-                                <div class="infor-detail">
-                                    <i class="fas fa-history fa-sm"></i>
-                                    <p>Access to future versions</p>
-                                </div> -->
-                                <div class="money-add-cart">
-                                    <p>カートに入れる</p>
-                                </div>
-                                <div class="c-payment-solutions">
-                                    <div class="c-payment-solutions__image --card-visa"></div>
-                                    <div class="c-payment-solutions__image --card-mastercard"></div>
-                                    <div class="c-payment-solutions__image --card-amex"></div>
-                                    <span class="via">via</span>
-
-                                    <div class="c-payment-solutions__image --paypal"></div>
-                                </div>
-                            </div>
-                            <div class="inspect-model">
-                                <!-- <div class="inspect-model-text">
-                                    <p>INSPECT THE 3D MODEL</p>
-                                </div>
-                                <div class="inspect-review">
-                                    Review
-                                </div>
-                                <div class="inspect-review">
-                                    Description
-                                </div>
-                                <div class="inspect-review">
-                                    Format
-                                </div>
-                                <div class="inspect-review">
-                                    Download
-                                </div>
-                                <div class="inspect-review">
-                                    Version
-                                </div>
-                                <div class="inspect-review">
-                                    File Size
-                                </div>
-                                <div class="inspect-review">
-                                    Date
-                                </div> -->
+                <!-- <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                <div class="header__viewer">
+                    <div id="viewer">
+                        <div data-react-class="Home/HomeViewer"
+                            data-react-props="{&quot;prerender&quot;:true,&quot;tag&quot;:&quot;div&quot;}"
+                            data-react-cache-id="Home/HomeViewer-0">
+                            <div class="arsenal-viewer header__viewer-container">
+                                <script type="application/ld+json">
+                                    {
+                                        "@context": "http://schema.org/",
+                                        "@type": "3DModel",
+                                        "image": "https://viewer.cgtarsenal.com/cgtrader_enterprise/MARMC0013357/armchair.png",
+                                        "name": "Armchair 3D Model CGTrader",
+                                        "encoding": [{
+                                            "@type": "MediaObject",
+                                            "contentUrl": "https://viewer.cgtarsenal.com/cgtrader_enterprise/MARMC0013357/armchair.gltf",
+                                            "encodingFormat": "model/gltf-binary"
+                                        }, {
+                                            "@type": "MediaObject",
+                                            "contentUrl": "https://viewer.cgtarsenal.com/cgtrader_enterprise/MARMC0013357/armchair.usdz",
+                                            "encodingFormat": "model/vnd.usdz+zip"
+                                        }]
+                                    }
+                                </script><iframe
+                                    src="https://viewer.cgtarsenal.com/cgtrader_enterprise/MARMC0013357/viewer"
+                                    width="100%" height="100%" allowfullscreen=""
+                                    style="border: 0px; background-color: rgb(255, 255, 255);"></iframe>
                             </div>
                         </div>
-
                     </div>
                 </div>
+            </div> -->
 
             </div>
         </div>
-    </div>
+    </section>
 
-        <!-- Footer -->
-        <div id="footerID"> </div>
-        <!-- Footer -->
-    <!-- <div class="page-footer">
-        <div class="footer-social-icon">
-            <a href="mailto:someone@example.com"><i class="fas fa-envelope"
-                    style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i></a>
-            <i class="fab fa-facebook-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
-            <i class="fab fa-youtube-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
-            <i class="fab fa-linkedin" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
-            <i class="fab fa-twitter-square" style="color: rgb(37, 36, 36); font-size: 2.5rem;"></i>
+
+
+    <section class="info-section info-section--white">
+        <div class="container-fixed">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5 col-xl-4 offset-lg-1 offset-xl-2">
+                    <h2 class="heading-40 info-section__heading"><strong>3D-CADライブラリー</strong></h2>
+                    <p class="info-section__description">Choose from 1290 000 3D models for applications such as gaming, AR/VR, advertising, animation, movies and 3D printing</p>
+                </div>
+                <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="row">
+                        <!-- <div class="col-12 col-sm-4 info-section__image-list"><img alt="3D Models" class="image-with-spacing" src="https://assets.cgtrader.com/assets/home/cgtrader-3d-models-5f4c33776bfbc579b3fdcf1062df680b2d22cbeaeb2d8669feb6688f1d94ba93.png">
+                            <h4 class="heading-24">3D Models</h4>
+                            <p class="info-section__description">Buy professional 3D Models for your project</p><a href="https://www.cgtrader.com/3d-models">View all &gt;</a>
+                        </div> -->
+
+                        <div class="category-model col-12 col-sm-4 info-section__image-list">
+                            <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/1.png">
+                            <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24">海洋重機関連</a>
+                        </div>
+                        <div class="category-model col-12 col-sm-4 info-section__image-list">
+                            <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/2.png">
+                            <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24">交通規制関連</a>
+                        </div>
+                        <div class="category-model col-12 col-sm-4 info-section__image-list">
+                            <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/3.png">
+                            <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24">車両関連</a>
+                        </div>
+                        <div class="category-model col-12 col-sm-4 info-section__image-list">
+                            <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/4.png">
+                            <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24">足場機材</a>
+                        </div>
+                        <div class="category-model col-12 col-sm-4 info-section__image-list">
+                            <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/5.png">
+                            <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24">クレーン</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </section>
+
+
+    <!-- Footer -->
+    <div id="footerID"> </div>
+    <!-- Footer -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/assets/js/jquery-3.6.0.min.js"></script>
@@ -185,17 +136,13 @@
     <script src="/assets/boostrap/js/bootstrap.min.js"></script>
     <script src="/assets/js/common.js"></script>
     <script src="/assets/js/auth.js"></script>
+    <script src="/src/3d-cad/3d-dashboard.js"></script>
     <script type="module" src="/src/3d-cad/model/load.js"></script>
-    <script>
-        function changeUrl() {
-            window.location.href = "/src/3d-cad/3d-dashboard.html"
-        }
-    </script>
 
-<script>
-    $("#headerID").load("/src/header.html");
-    $("#footerID").load("/src/footer.html");
-</script>
+    <script>
+        $("#headerID").load("/src/header-footer/header.html");
+        $("#footerID").load("/src/header-footer/footer.html");
+    </script>
 
 </body>
 
