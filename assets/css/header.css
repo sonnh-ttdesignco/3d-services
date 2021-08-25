@@ -1,45 +1,120 @@
 .button {
-	border: none;
-	border-radius: 3px;
-	padding: 0 20px;
-	text-align: center;
-	font-weight: 600;
-	text-decoration: none;
-	cursor: pointer;
-	padding: 0 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 30px;
     margin-left: -75px;
-	min-width: 25px;
-	height: 35px;
-	font-size: 16px;
-	line-height: 44px;
-	transition: 250ms linear;
-	background: #1273eb;
-	color: #fff;
+    min-width: 25px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 44px;
+    transition: 250ms linear;
+    background: #1273eb;
+    color: #fff;
     float: right !important;
 }
 
 .button--icon i {
-	float: inherit !important;
-	margin: 0 auto
+    float: inherit !important;
+    margin: 0 auto
 }
 
 .button:hover {
-	background: #0161cd;
-	color: #fff
+    background: #0161cd;
+    color: #fff
 }
 
 .button.active {
-	background: #0353a7;
-	color: #fff
+    background: #0353a7;
+    color: #fff
 }
 
 .button::after {
-	display: table;
-	clear: both;
-	content: ''
+    display: table;
+    clear: both;
+    content: ''
 }
 
 .button.disabled {
-	opacity: 0.4;
-	pointer-events: none
+    opacity: 0.4;
+    pointer-events: none
+}
+
+.nav-bar-wrap {
+    height: 60px !important;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.nav-bar {
+    max-width: 1440px !important;
+    width: 100%;
+    margin: 0 auto !important;
+    height: 100%;
+    padding: 0 30px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-menu-wrap {
+    align-content: center;
+    justify-content: flex-end;
+    width: fit-content !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo-with-ribbon {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.form-control {
+    width: 500px;
+    height: 35px;
+}
+
+.shoppint-cart {
+    margin: 0 15px;
+}
+
+.shoppint-cart:hover {
+    cursor: pointer;
+}
+
+.menu-item {
+    align-items: center !important;
+}
+
+.nav-bar-menu {
+    margin-right: 0rem;
+}
+
+.nav-bar-logo {
+    height: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 10px;
+    width: fit-content !important;
+}
+
+.nav-bar-menu {
+    width: 150px !important;
+}
+
+.img-full-width-1 {
+    height: 100%;
+    padding: 5px 0;
 }

@@ -66,7 +66,7 @@ function login(loginInfo) {
                 window.location.href = "/src/databook/databook.html";
                 break;
             default:
-                window.location.href = "/index.html";
+                window.location.href = "/src/home/home.html";
                 break;
         }
         result = {
