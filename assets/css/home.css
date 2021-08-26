@@ -754,3 +754,40 @@ a {
 .info-section__image-list .info-section__description {
     text-align: left
 }
+
+.category-model {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3% 2% 3%;
+}
+
+.category-model img {
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid gray;
+    box-shadow: 0 2px 8px 0 rgb(85 85 85 / 15%);
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.category-model:hover img {
+    transform: scale(1.05);
+}
+
+.category-model:hover a {
+    font-weight: 600;
+    color: rgb(156, 0, 0);
+}
+
+.category-model a {
+    margin-top: 10px;
+    color: #1858A8;
+}
+
+.text-hover:hover {
+    font-weight: 600;
+    color: rgb(156, 0, 0);
+}

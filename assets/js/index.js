@@ -4,7 +4,7 @@ window.PCH = PCH; // Used by APP Scripts.
 
 var loader = new PCH.FileLoader();
 
-window.LoadView = function() {
+$(document).ready(function() {
     loader.load("/src/3d-cad/model/app.json", function(text) {
         var player = new APP.Player();
         player.load(JSON.parse(text));
@@ -18,8 +18,8 @@ window.LoadView = function() {
         element.removeChild(loading);
         element.appendChild(player.dom);
 
-        window.addEventListener("resize", function() {
-            player.setSize(element.clientWidth, element.clientHeight);
-        });
+        // window.addEventListener("resize", function() {
+        //     player.setSize(element.clientWidth, element.clientHeight);
+        // });
     });
-};
+});
