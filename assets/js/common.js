@@ -84,34 +84,6 @@ function userMenuBtnBehavior() {
       });
     }, 100);
   });
-
-  $userWrap.click(function (e) {
-    e.preventDefault();
-    if ($btn.hasClass("fa-caret-up")) {
-      //close
-      $btn.removeClass("fa-caret-up");
-      $btn.addClass("fa-caret-down");
-      if (!$menu.hasClass("hidden")) {
-        $menu.addClass("hidden");
-      }
-    } else {
-      //open
-      $btn.removeClass("fa-caret-down");
-      $btn.addClass("fa-caret-up");
-      if ($menu.hasClass("hidden")) {
-        $menu.removeClass("hidden");
-      }
-    }
-    setTimeout(() => {
-      $(`.user-wrap .user-menu a`).each(function () {
-        let $this = $(this);
-        $this.click(() => {
-          console.log($this.attr("href"));
-          window.location = $this.attr("href");
-        });
-      });
-    }, 100);
-  });
 }
 
 var mouse_is_inside = false;
