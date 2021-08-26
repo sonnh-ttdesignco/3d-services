@@ -169,22 +169,24 @@
                             <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD&enable-funding=card">
                             </script>
                             <script>
-                                paypal.Buttons({
-                                    locale: 'en_US',
-                                    style: {
-                                        color: 'blue',
-                                        shape: 'rect',
-                                        label: 'checkout',
-                                        layout: 'vertical',
-                                        size: 'responsive',
-                                        fundingicons: 'true'
-                                    }
+                                // paypal.Buttons({
+                                //     locale: 'en_US',
+                                //     style: {
+                                //         color: 'blue',
+                                //         shape: 'rect',
+                                //         label: 'checkout',
+                                //         layout: 'vertical',
+                                //         size: 'responsive',
+                                //         fundingicons: 'true'
+                                //     }
 
-                                }).render('#paypal-button-container');
+                                // }).render('#paypal-button-container');
                             </script>
-                            <!-- <div class="c-paypal-button ">
+                            <div class="c-paypal-button ">
                                 <div data-ref="container" id="paypal-checkout-button">
-                                    <div id="xcomponent-paypal-button-bc47aa612d" class="paypal-button paypal-button-context-iframe paypal-button-label-checkout paypal-button-size-responsive paypal-button-layout-horizontal" style="">
+                                    <div id="xcomponent-paypal-button-bc47aa612d"
+                                        class="paypal-button paypal-button-context-iframe paypal-button-label-checkout paypal-button-size-responsive paypal-button-layout-horizontal"
+                                        style="">
                                         <style>
                                             #xcomponent-paypal-button-bc47aa612d {
                                                 font-size: 0;
@@ -245,14 +247,17 @@
                                                 pointer-events: none;
                                             }
                                         </style>
-                                        <div class="xcomponent-outlet" style="height: 70px;"><iframe class="xcomponent-component-frame xcomponent-visible" frameborder="0" allowtransparency="true"
+                                        <div class="xcomponent-outlet" style="height: 70px;"><iframe
+                                                class="xcomponent-component-frame xcomponent-visible" frameborder="0"
+                                                allowtransparency="true"
                                                 name="xcomponent__ppbutton__4_0_202__pmrhk2leei5ceyjzmu3dizlbmm3tsirmej2gczzchirhaylzobqwyllcov2hi33oeiwcey3pnvyg63tfnz2faylsmvxhiir2pmrhezlgei5ce5dpoarh2lbcojsw4zdfojigc4tfnz2ceot3ejzgkzrchirhi33qej6syitqojxxa4zchj5se5dzobsseorcojqxoirmej3gc3dvmurdu6zcmvxhmir2ejyhe33eovrxi2lpnyrcyittor4wyzjchj5se3dbmjswyir2ejrwqzldnnxxk5bcfqrhg2l2murduitsmvzxa33oonuxmzjcfqrhg2dbobsseorcojswg5bcfqrgg33mn5zceorcmjwhkzjcfqrgm5lomruw4z3jmnxw44zchj2he5lfpuwcey3pnvwws5bchj2he5lffqrhaylznvsw45bchj5sex27or4xazk7l4rduis7l5thk3tdoruw63s7l4rh2lbcn5xec5lunbxxe2l2murdu6zcl5pxi6lqmvpv6ir2ejpv6ztvnzrxi2lpnzpv6it5fqrg63sfojzg64rchj5sex27or4xazk7l4rduis7l5thk3tdoruw63s7l4rh2lbcn5xegylomnswyir2pmrf6x3upfygkx27ei5cex27mz2w4y3unfxw4x27ej6syittmvzxg2lpnzeuiir2ei4tmnrxgbqtszjrgbpwoylzor2w42tunbutezdteiwceytvor2g63stmvzxg2lpnzeuiir2eizweyjvhbrtcyjrgjpwoylzor2w42tunbutezdteiwce3lforqseot3puwce43povzggzjchirg2yloovqwyirmejyhezlgmv2gg2cmn5tws3rchjtgc3dtmuwceztvnzsgs3thei5hwitbnrwg653fmqrduw25fqrgi2ltmfwgy33xmvsceos3ej3gk3tnn4rf2lbcojsw2zlnmjsxezleei5fwitqmf4xaylmejosyitsmvwwk3lcmvzceot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpv6syitpnzjgk3temvzceot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwce33oinwgsy3lei5hwis7l52hs4dfl5pseorcl5pwm5lomn2gs33ol5pse7jmejwg6y3bnrsseorcmvxf6vkteiwce3dpm5ggk5tfnqrduitxmfzg4irmejqxoyljorig64dvobbhe2lem5sseot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwce43vobygyzlnmvxhiir2pmrgozlukbqxs3lfnz2e64dunfxw44zchj5sex27or4xazk7l4rduis7l5thk3tdoruw63s7l4rh2lbcmfsgiudbpfwwk3tuirsxiyljnrzseot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpv6syitumvzxiir2pmrgcy3unfxw4ir2ejrwqzldnnxxk5bcpuwce5ljmqrduitcmm2doylbgyytezbcfqrhmzlsonuw63rchirdilrqfyzdamrcpv6syitjmqrduirzhfstgnbymq3dizrcfqrgi33nmfuw4ir2ejuhi5dqom5c6l3tnnsxiy3imzqweltdn5wse7i__"
-                                                title="ppbutton" scrolling="no" allowpaymentrequest="allowpaymentrequest"
+                                                title="ppbutton" scrolling="no"
+                                                allowpaymentrequest="allowpaymentrequest"
                                                 src="https://www.paypal.com/webapps/hermes/button?env=production&amp;style.label=checkout&amp;style.size=responsive&amp;style.shape=rect&amp;style.color=blue&amp;style.fundingicons=true&amp;commit=1&amp;sessionID=96670a9e10_gaytunjthi2ds&amp;buttonSessionID=3ba58c1a12_gaytunjthi2ds&amp;funding.disallowed=venmo&amp;funding.remembered=paypal&amp;locale.x=en_US&amp;logLevel=warn&amp;uid=bc47aa612d&amp;version=4.0.202&amp;xcomponent=1"
                                                 style="background-color: transparent;"></iframe></div>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
