@@ -78,7 +78,6 @@ function userMenuBtnBehavior() {
       $(`.user-wrap .user-menu a`).each(function () {
         let $this = $(this);
         $this.click(() => {
-          console.log($this.attr("href"));
           window.location = $this.attr("href");
         });
       });
@@ -86,8 +85,36 @@ function userMenuBtnBehavior() {
   });
 }
 
+function initUserMenu() {
+  if (getAuth().state == 1) {
+    if ($(`.nav-bar .user-wrap`).hasClass("hidden")) {
+      $(`.nav-bar .user-wrap`).removeClass("hidden");
+      $(`.nav-bar .user-wrap span.user-name`).text(getAuth().username);
+      $(`.nav-bar .user-wrap .user-info img`).attr("src", getAuth().ava);
+    }
+    if ($(`.nav-bar-menu .logout`).hasClass("hidden")) {
+      $(`.nav-bar-menu .logout`).removeClass("hidden");
+    }
+    if (!$(`.nav-bar-menu .login`).hasClass("hidden")) {
+      $(`.nav-bar-menu .login`).addClass("hidden");
+    }
+  } else {
+    if (!$(`.nav-bar .user-wrap`).hasClass("hidden")) {
+      $(`.nav-bar .user-wrap`).addClass("hidden");
+    }
+    if (!$(`.nav-bar-menu .logout`).hasClass("hidden")) {
+      $(`.nav-bar-menu .logout`).addClass("hidden");
+    }
+    if ($(`.nav-bar-menu .login`).hasClass("hidden")) {
+      $(`.nav-bar-menu .login`).removeClass("hidden");
+    }
+  }
+
+}
+
 var mouse_is_inside = false;
 
+//hover off menu
 $(document).ready(function () {
   $("#userInfo").hover(
     function () {
@@ -106,29 +133,7 @@ $(document).ready(function () {
 
 $(function () {
   setTimeout(function () {
-    if (getAuth().state == 1) {
-      if ($(`.nav-bar .user-wrap`).hasClass("hidden")) {
-        $(`.nav-bar .user-wrap`).removeClass("hidden");
-        $(`.nav-bar .user-wrap span.user-name`).text(getAuth().username);
-        $(`.nav-bar .user-wrap .user-info img`).attr("src", getAuth().ava);
-      }
-      if ($(`.nav-bar-menu .logout`).hasClass("hidden")) {
-        $(`.nav-bar-menu .logout`).removeClass("hidden");
-      }
-      if (!$(`.nav-bar-menu .login`).hasClass("hidden")) {
-        $(`.nav-bar-menu .login`).addClass("hidden");
-      }
-    } else {
-      if (!$(`.nav-bar .user-wrap`).hasClass("hidden")) {
-        $(`.nav-bar .user-wrap`).addClass("hidden");
-      }
-      if (!$(`.nav-bar-menu .logout`).hasClass("hidden")) {
-        $(`.nav-bar-menu .logout`).addClass("hidden");
-      }
-      if ($(`.nav-bar-menu .login`).hasClass("hidden")) {
-        $(`.nav-bar-menu .login`).removeClass("hidden");
-      }
-    }
+    initUserMenu();
     userMenuBtnBehavior();
-  }, 100);
+  }, 1000)
 });

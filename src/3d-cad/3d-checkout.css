@@ -82,8 +82,8 @@ html {
     background-color: #222;
 }
 
-a:not(.user-menu-item) {
-    color: #1caad9 !important;
+a {
+    color: #1caad9;
     cursor: pointer;
 }
 
