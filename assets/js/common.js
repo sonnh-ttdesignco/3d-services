@@ -132,8 +132,12 @@ $(document).ready(function () {
 });
 
 $(function () {
-  setTimeout(function () {
-    initUserMenu();
-    userMenuBtnBehavior();
-  }, 1000)
+  var checkExist = setInterval(function () {
+    if ($('.nav-bar .user-wrap').length) {
+      console.log("Exists!");
+      initUserMenu();
+      userMenuBtnBehavior()
+      clearInterval(checkExist);
+    }
+  }, 100);
 });
