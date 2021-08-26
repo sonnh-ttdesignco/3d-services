@@ -1,5 +1,5 @@
 const pageName = "3d-checkout";
-requiredLogin(pageName);
+
 
 function initCouponForm() {
     let $checkActor = $(`#check-actor`);
