@@ -1,5 +1,5 @@
 const pageName = "3d-cad";
-requiredLogin(pageName);
+
 
 function resizeBar() {
     console.log('asdads')

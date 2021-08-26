@@ -1,5 +1,5 @@
 const pageName = "3d-dashboard";
-requiredLogin(pageName);
+
 
 function initCart() {
     let $cart = $("#cart");
