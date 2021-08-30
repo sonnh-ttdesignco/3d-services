@@ -134,10 +134,10 @@ $(document).ready(function () {
 $(function () {
   var checkExist = setInterval(function () {
     if ($('.nav-bar .user-wrap').length) {
-      console.log("Exists!");
       initUserMenu();
       userMenuBtnBehavior()
       clearInterval(checkExist);
     }
   }, 100);
+
 });

@@ -121,7 +121,7 @@
 		height: 70px;
 		border-bottom: 1px solid rgb(196, 196, 196);
 		display: flex;
-		/* justify-content: center; */
+		justify-content: space-between;
 		align-items: center;
 	}
 
@@ -129,6 +129,19 @@
 		font-size: 30px;
 		padding-left: 20px;
 		margin: 0 !important;
+	}
+
+	/* SonNH 20210830 */
+	.form__title .close-wrap {
+		margin: 0.5rem;
+		width: 2rem;
+		height: 2rem;
+		background-color: white;
+		position: relative;
+		top: -2rem;
+		right: -1.5rem;
+		border-radius: 50%;
+		cursor: pointer;
 	}
 
 	.form__input {

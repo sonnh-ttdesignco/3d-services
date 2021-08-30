@@ -35,9 +35,11 @@
                 <button class="button button--icon" type="submit">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
-                <div class="shoppint-cart" id="cart-icon" style="margin-right: 0px;">
-                    <i class="fas fa-shopping-cart fa-lg"></i>
-                    <span class="cart-icon-count">2</span>
+                <div class="shoppint-cart" style="margin-right: 0px;">
+                    <div id="cart-icon">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                        <span class="cart-icon-count">2</span>
+                    </div>
                     <div class="cart-wrap hide" id="cart">
                         <div class="cart-header">
                             <p class="header-title">
@@ -88,7 +90,7 @@
                                 <p class="total-title">Total</p>
                                 <p class="total-price">¥##.##</p>
                             </div>
-                            <a class="footer-action" href="/src/3d-cad//3d-checkout.html">
+                            <a class="footer-action" href="/src/3d-cad/3d-checkout.html">
                                 <button class="button action-btn">
                                     <span class="btn-text">Go to checkout</span>
                                 </button>
@@ -642,6 +644,7 @@
 
     <!-- Footer -->
     <div id="footerID"> </div>
+    <div id="cart-dropback" class="cart-dropback fade"></div>
     <!-- Footer -->
 
 

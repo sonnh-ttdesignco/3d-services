@@ -588,7 +588,7 @@ p {
 .cart-icon-count {
     position: relative;
     left: -10px;
-    top: 0px;
+    top: -10px;
     padding: 1px 2px;
     font-size: 10px;
     font-weight: 800;
@@ -601,4 +601,8 @@ p {
     background-color: #df1660;
     border-radius: 2px;
     transform: translate(1px, -7px);
+}
+
+#cart-icon {
+    user-select: none;
 }

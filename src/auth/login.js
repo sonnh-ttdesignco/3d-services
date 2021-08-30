@@ -35,6 +35,11 @@ function loginFunction() {
   }
 }
 
+function backPreviousPage() {
+
+  window.location = document.referrer;
+}
+
 $(function () {
   $(`.login_btn`).click(function () {
     loginFunction();
