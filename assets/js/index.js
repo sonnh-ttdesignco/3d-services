@@ -1,25 +1,30 @@
-import * as PCH from "/src/3d-cad/model/js/data.js";
-import { APP } from "/src/3d-cad/model/js/app.js";
-window.PCH = PCH; // Used by APP Scripts.
-
-var loader = new PCH.FileLoader();
-
 $(document).ready(function() {
-    loader.load("/src/3d-cad/model/app.json", function(text) {
-        var player = new APP.Player();
-        player.load(JSON.parse(text));
-        var element = document.getElementById("view-model-3d");
-        if (element.clientWidth == 0) return;
+    var videos = new Array();
+    videos[0] = 'src/3d-cad/img/content/cate/KYG-0.mp4';
+    videos[1] = 'src/3d-cad/img/content/cate/KYG-1.mp4';
+    videos[2] = 'src/3d-cad/img/content/cate/KYG-2.mp4';
 
-        player.setSize(element.clientWidth, element.clientHeight);
-        player.play();
+    var currentVideo = 0;
 
-        var loading = document.getElementById("loading-model");
-        element.removeChild(loading);
-        element.appendChild(player.dom);
+    nextVideo();
 
-        // window.addEventListener("resize", function() {
-        //     player.setSize(element.clientWidth, element.clientHeight);
-        // });
-    });
+    function nextVideo() {
+        // get the element
+        var videoPlayer = document.getElementById("myVideo")
+            // remove the event listener, if there is one
+        videoPlayer.removeEventListener('ended', nextVideo, false);
+
+        // update the source with the currentVideo from the videos array
+        videoPlayer.src = videos[currentVideo];
+        // play the video
+
+        videoPlayer.play();
+
+        // increment the currentVideo, looping at the end of the array
+        currentVideo = (currentVideo + 1) % videos.length;
+
+        // add an event listener so when the video ends it will call the nextVideo function again
+        videoPlayer.addEventListener('ended', nextVideo, false);
+    }
+
 });

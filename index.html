@@ -31,30 +31,9 @@
                         <h1 class="heading-40 header__title"><strong>Search thousands of 3D models</strong></h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda dolores quisquam omnis,</p>
                     </div>
-                    <div class="filter-list" style="width: 60%; margin-top: 20px;">
-                        <div class="filer-type">
-                            <p>ブランド名</p>
-                            <i style="color: #1858A8;" class="fas fa-chevron-right fa-sm"></i>
-                        </div>
-                        <div class="filer-type">
-                            <p>カテゴリ</p>
-                            <i style="color: black;" class="fas fa-chevron-right fa-sm"></i>
-                        </div>
-                        <div class="filer-type">
-                            <p>ファイルタイプ</p>
-                            <i style="color: black;" class="fas fa-chevron-right fa-sm"></i>
-                        </div>
-                    </div>
                 </div>
-
-
-                <div class="col-12 col-md-6 col-lg-5 col-xl-4 offset-lg-1 offset-xl-2" style="margin-left: 35px;">
-                    <div class="header__viewer">
-                        <div id="view-model-3d-image" style="width:400px; height: 426px;">
-                            <img alt="image" src="/src/3d-cad/img/content/cate/5.2.png">
-                        </div>
-                    </div>
-                </div>
+                <video width="560" height="560" id="myVideo" autoplay>
+                </video>
 
             </div>
         </div>
@@ -66,9 +45,9 @@
         <div class="container-fixed">
             <div class="row">
                 <div class="all__content">
-                    <div class="text__title">
-                        <h2 class="heading-40 info-section__heading"><strong>3D-CADライブラリー</strong></h2>
-                        <p class="info-section__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, quibusdam optio libero odit cumque eaque accusamus maiores voluptates aperiam hic.</p>
+                    <div class="text__title" style="width: 100%;">
+                        <h2 class="heading-40 info-section__heading"><strong style="color:white">3D-CADライブラリー</strong></h2>
+                        <!-- <p class="info-section__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, quibusdam optio libero odit cumque eaque accusamus maiores voluptates aperiam hic.</p> -->
                     </div>
                 </div>
 
@@ -109,6 +88,13 @@
                             <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24">クレーン</a>
                             <p class="info-section__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                         </div>
+                        <div class="category-model col-12 col-sm-4 info-section__image-list">
+                            <div class="img__overfit">
+                                <img onclick="changeUrl()" src="/src/3d-cad/img/content/cate/6.png">
+                            </div>
+                            <a href="/src/3d-cad/3d-dashboard.html" class="text-hover heading-24">送り出し関連機材</a>
+                            <p class="info-section__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,6 +124,9 @@
         function changeUrl() {
             window.location.href = "/src/3d-cad/3d-dashboard.html"
         }
+    </script>
+
+    <script type="text/javascript">
     </script>
 </body>
 

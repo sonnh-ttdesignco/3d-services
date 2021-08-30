@@ -553,12 +553,9 @@ p {
     padding: 0 3% 2% 3%;
 }
 
-
 .category-model:hover img {
     transform: scale(1.05);
 }
-
-
 
 .category-model a {
     margin-top: 10px;
@@ -807,7 +804,6 @@ html {
 }
 
 @media (min-width: 576px) {
-
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -821,7 +817,6 @@ html {
 }
 
 @media (min-width: 968px) {
-
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -835,7 +830,6 @@ html {
 }
 
 @media (min-width: 1256px) {
-
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -849,7 +843,6 @@ html {
 }
 
 @media (min-width: 1576px) {
-
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -863,7 +856,6 @@ html {
 }
 
 @media (min-width: 1848px) {
-
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -900,12 +892,10 @@ html {
         flex: 0 0 41.66667%;
         max-width: 41.66667%
     }
-
     .col-lg-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%
     }
-
     .offset-lg-1 {
         margin-left: 8.33333%
     }
@@ -916,12 +906,10 @@ html {
         flex: 0 0 33.33333%;
         max-width: 33.33333%
     }
-
     .col-xl-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%
     }
-
     .offset-xl-2 {
         margin-left: 16.66667%
     }
@@ -942,7 +930,7 @@ html {
 
 .heading-40 {
     font-size: 2.5rem;
-    line-height: 50px
+    line-height: 100px;
 }
 
 .heading-24 {
@@ -1209,20 +1197,16 @@ a {
         margin-top: 20px;
         text-align: center
     }
-
     .header__content .header__tag-line {
         font-size: 0.875rem
     }
-
     .header__content .header__title {
         font-size: 2rem;
         line-height: 40px
     }
-
     .header__content p {
         line-height: 32px
     }
-
     .header__content .site-search {
         margin: 0 auto
     }
@@ -1249,7 +1233,8 @@ a {
 }
 
 .info-section__heading {
-    font-size: 2rem
+    font-size: 2rem;
+    background-image: url("src/3d-cad/img/back5.jpg");
 }
 
 @media (min-width: 968px) {
@@ -1313,12 +1298,9 @@ a {
     transform: scale(1.1);
 }
 
-
 .category-model a {
     color: #1858A8;
 }
-
-
 
 #view-model-3d-image img {
     height: 100%;
