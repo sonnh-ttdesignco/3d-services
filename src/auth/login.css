@@ -133,16 +133,27 @@
 
 	/* SonNH 20210830 */
 	.form__title .close-wrap {
-		margin: 0.5rem;
-		width: 2rem;
-		height: 2rem;
+		margin: 20px;
 		background-color: white;
-		position: relative;
-		top: -2rem;
-		right: -1.5rem;
-		border-radius: 50%;
 		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.5rem;
 	}
+
+	.form__title .close-wrap--hover {
+		padding: 0.5rem;
+		margin: 20px;
+		background-color: white;
+		cursor: pointer;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
 
 	.form__input {
 		padding: 30px;

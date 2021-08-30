@@ -35,15 +35,30 @@ function loginFunction() {
   }
 }
 
+//SonNH 20210830
 function backPreviousPage() {
-
   window.location = document.referrer;
 }
 
+//SonNH 20210830
+function hoverCloseButton() {
+  let $iconClose = $('.close-wrap');
+  let $iconCloseHover = $('.close-wrap--hover');
+  $iconClose.hover(function () {
+    $iconClose.css("display", "none");
+    $iconCloseHover.css("display", "flex");
+  }, function () {
+    $iconClose.css("display", "flex");
+    $iconCloseHover.css("display", "none");
+  })
+}
+
 $(function () {
+
   $(`.login_btn`).click(function () {
     loginFunction();
   });
+
   $(`.input_pass`).focus(() => {
     $(document).on("keypress", function (e) {
       if (e.which == 13) {
@@ -53,4 +68,7 @@ $(function () {
       }
     });
   });
+
+  hoverCloseButton();
+
 });
