@@ -890,14 +890,15 @@ html {
 @media (min-width: 1256px) {
     .col-lg-5 {
         flex: 0 0 41.66667%;
-        max-width: 41.66667%
+        max-width: 41.66667%;
+        padding-top: 10%;
     }
     .col-lg-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%
     }
     .offset-lg-1 {
-        margin-left: 8.33333%
+        margin-left: 5%
     }
 }
 
@@ -1218,18 +1219,8 @@ a {
     }
 }
 
-.info-section {
-    padding: 76px 0
-}
-
 .info-section.info-section--white {
     background-color: #fff
-}
-
-@media (min-width: 968px) {
-    .info-section {
-        padding: 60px 0
-    }
 }
 
 .info-section__heading {
@@ -1307,7 +1298,7 @@ a {
 }
 
 .all__content {
-    max-width: 1280px !important;
+    /* max-width: 1280px !important; */
     margin: auto !important;
     width: 100%;
 }
