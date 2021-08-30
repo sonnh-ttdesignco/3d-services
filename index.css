@@ -804,6 +804,7 @@ html {
 }
 
 @media (min-width: 576px) {
+
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -817,6 +818,7 @@ html {
 }
 
 @media (min-width: 968px) {
+
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -830,6 +832,7 @@ html {
 }
 
 @media (min-width: 1256px) {
+
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -843,6 +846,7 @@ html {
 }
 
 @media (min-width: 1576px) {
+
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -856,6 +860,7 @@ html {
 }
 
 @media (min-width: 1848px) {
+
     .col-12,
     .col-sm-4,
     .col-md-6,
@@ -893,10 +898,12 @@ html {
         max-width: 41.66667%;
         padding-top: 10%;
     }
+
     .col-lg-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%
     }
+
     .offset-lg-1 {
         margin-left: 5%
     }
@@ -907,10 +914,12 @@ html {
         flex: 0 0 33.33333%;
         max-width: 33.33333%
     }
+
     .col-xl-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%
     }
+
     .offset-xl-2 {
         margin-left: 16.66667%
     }
@@ -1198,16 +1207,20 @@ a {
         margin-top: 20px;
         text-align: center
     }
+
     .header__content .header__tag-line {
         font-size: 0.875rem
     }
+
     .header__content .header__title {
         font-size: 2rem;
         line-height: 40px
     }
+
     .header__content p {
         line-height: 32px
     }
+
     .header__content .site-search {
         margin: 0 auto
     }
@@ -1225,12 +1238,14 @@ a {
 
 .info-section__heading {
     font-size: 2rem;
-    background-image: url("src/3d-cad/img/back5.jpg");
+    font-weight: 600;
+    color: white;
+    /* background-image: url("src/3d-cad/img/back5.jpg"); */
 }
 
 @media (min-width: 968px) {
     .info-section__heading {
-        font-size: 2.75rem
+        font-size: 3.5rem
     }
 }
 
@@ -1306,9 +1321,60 @@ a {
 .text__title {
     width: 60%;
     margin: auto;
+    background-image: url(src/3d-cad/img/back5.jpg);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text__title h2,
 .text__title p {
     text-align: center;
+}
+
+.all__fix {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+.fix__header__content {
+    width: 45%;
+    padding: 60px 30px 0 30px;
+
+}
+
+.fix__header__content p {
+    font-size: 20px;
+    padding: 0 !important;
+    margin: 20px 0 !important;
+}
+
+.fix__header__video {
+    width: 55%;
+    padding-top: 60px;
+}
+
+.fix__title {
+    font-size: 50px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fix__header__video .slider-video {
+    width: 600px;
+    cursor: pointer;
+}
+
+.fix__header__video .slider-video video {
+    width: 100%;
+}
+
+.fix__header__video .slider-video img {
+    width: 100%;
+    object-fit: cover;
 }

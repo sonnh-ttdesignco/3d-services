@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/src/3d-cad/3d-dashboad.css">
     <link rel="stylesheet" href="/src/3d-cad/3d-cad.css">
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/slider/slider.css" />
     <link rel="stylesheet" href="/index.css">
     <title>3D-CADライブラリー</title>
 </head>
@@ -25,15 +26,18 @@
 
     <section class="info-section" style="background-color: #f7f9fa;">
         <div class="container-fixed">
-            <div class="row align-items-center">
-                <div class="col-lg-5 offset-lg-1" style="margin-top: -20%;">
-                    <div class="header__content">
-                        <h1 class="heading-40 header__title"><strong>Search thousands of 3D models</strong></h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda dolores quisquam omnis,</p>
-                    </div>
+            <div class="all__fix">
+                <div class="fix__header__content">
+                    <h1 class="fix__title"><strong>Search thousands of 3D models</strong></h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda dolores quisquam omnis</p>
                 </div>
-                <div style="margin-top:5%">
-                    <video width="600" height="500" id="myVideo" autoplay>
+
+                <div class="fix__header__video">
+                    <div class="slider-video">
+                        <video controls type="video/mp4" src="./src/3d-cad/img/content/cate/KYG-1.mp4" autoplay id="fix__play0"></video>
+                        <video controls type="video/mp4" src="./src/3d-cad/img/content/cate/KYG-2.mp4" autoplay id="fix__play1"></video>
+                        <img alt="image" src="./src/3d-cad/img/content/cate/slide_1.png" autoplay></img>
+                    </div>
                 </div>
                 </video>
             </div>
@@ -48,7 +52,7 @@
         <div class="row">
             <div class="all__content">
                 <div class="text__title" style="width: 100%;">
-                    <h2 class="heading-40 info-section__heading"><strong style="color:white">3D-CADライブラリー</strong></h2>
+                    <h2 class="heading-40 info-section__heading">3D-CADライブラリー</h2>
                     <!-- <p class="info-section__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, quibusdam optio libero odit cumque eaque accusamus maiores voluptates aperiam hic.</p> -->
                 </div>
             </div>
@@ -110,12 +114,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="/assets/js/jquery-3.6.0.min.js"></script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="/assets/boostrap/js/bootstrap.min.js"></script>
     <script src="/assets/js/common.js"></script>
     <script src="/assets/js/auth.js"></script>
     <script type="module" src="/assets/js/index.js"></script>
+
+    <script type="text/javascript" src="/assets/slider/slider.min.js"></script>
 
     <script>
         $("#headerID").load("/src/header-footer/header.html");
@@ -126,6 +135,17 @@
         function changeUrl() {
             window.location.href = "/src/3d-cad/3d-dashboard.html"
         }
+        $(".slider-video").slick({
+            isFinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+        });
+        $('.slider-video').on('afterChange', function (event, slider, currentSlide, nextSlide) {
+            if (currentSlide != "2") {
+                $(`#fix__play${parseInt(currentSlide)}`)[0].play();
+            }
+        });
     </script>
 
     <script type="text/javascript">
